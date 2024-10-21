@@ -1,0 +1,105 @@
+.serve-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+}
+
+.serve-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #1b5e20;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.serve-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.serve-item {
+    background-color: #fff;
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+}
+
+.serve-item p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-size: 1rem;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight:600;
+}
+
+.serve-item img,
+.serve-item h1,
+.serve-item button {
+    transition: opacity 0.3s ease;
+}
+
+.serve-item:hover img,
+.serve-item:hover h1,
+.serve-item:hover button {
+    opacity: 0;
+}
+
+.serve-item:hover p {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.serve-item img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.serve-item h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.serve-item button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #1b5e20;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.serve-item button:hover {
+    background-color: #388e3c;
+}
+
+.serve-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+    .serve-main {
+        flex-direction: column;
+        align-items: center;
+    }
+}

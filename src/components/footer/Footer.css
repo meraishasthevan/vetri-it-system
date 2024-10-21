@@ -1,0 +1,76 @@
+.footer {
+    background-color: #222528; 
+    padding: 60px 20px;
+    color: #fff;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    text-align: left;
+}
+
+.footer-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #27ae60;
+    font-weight: 700; 
+}
+
+
+.footer-section p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.footer-section ul li:hover{
+    color:rgb(8, 243, 8);
+    cursor: pointer;
+}
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+.social-icons .facebook:hover{
+    color:rgb(45, 45, 241);
+}
+.social-icons .whatsapp:hover{
+    color:#27ae60;
+}
+.social-icons .insta:hover{
+    color:#c54e6a;
+}
+
+@media (max-width: 1024px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,82 @@
+
+.vis-pro h1{
+    color:rgb(44, 183, 19);
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.process-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f4f4f9; */
+    min-height: 85vh;
+}
+
+.process {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.process div {
+    background-color: #42e037;
+    border-radius: 100%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.process div img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border: 3px solid black;
+    
+}
+
+.process div h1 {
+    font-size: 1.5rem;
+    color:white;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+    text-shadow: none;
+}
+
+.process div:hover {
+    background-color: #c2f7be;
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.process div:hover img {
+    transform: scale(1.1);
+    /* filter: grayscale(100%); */
+    border:3px solid green;
+}
+
+.process div:hover h1 {
+    color:rgb(1, 8, 1);
+}
+
+@media screen and (min-width: 768px) {
+    .process {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .process {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}

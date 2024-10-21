@@ -1,0 +1,108 @@
+.cardsection {
+    width: 90%;
+    margin: auto;
+}
+
+.cardsection-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+.cardsection h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px; 
+    text-align: center;
+    position: relative;
+}
+
+.cardsection h1::after {
+    content: '';
+    position: absolute;
+    left: 50%; 
+    bottom: -6px; 
+    transform: translateX(-50%); 
+    height: 4px; 
+    background-color: #035205;
+    opacity: 0;
+    transition: opacity 0.3s ease, width 0.3s ease;
+}
+
+.cardsection h1:hover::after {
+    opacity: 1;
+    width: 200px; 
+    bottom: -6px; 
+    cursor: pointer;
+}
+
+.cardsection h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card {
+    background-color: rgb(220 252 231);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin:50px 15px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 31%;
+    position: relative; 
+}
+
+.card img {
+    width: 80%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    position: relative; 
+    top: -50px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    border:3px solid green;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.card p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.card button {
+    background-color: #035205;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #059507;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 1.5);
+    cursor: pointer;
+}
+
+.card:hover img {
+    filter: brightness(0.9);
+    cursor: pointer;
+}
