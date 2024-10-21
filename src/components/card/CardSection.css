@@ -11,6 +11,7 @@
     background-color: #f9f9f9;
     font-family: Arial, sans-serif;
 }
+
 .cardsection h1 {
     font-size: 2.5rem;
     color: #333;
@@ -49,11 +50,11 @@
     background-color: rgb(220 252 231);
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    margin:50px 15px;
+    margin: 20px; 
     padding: 20px;
     text-align: center;
     transition: all 0.3s ease;
-    width: 31%;
+    width: calc(33.33% - 40px); 
     position: relative; 
 }
 
@@ -65,7 +66,7 @@
     top: -50px; 
     left: 50%; 
     transform: translateX(-50%); 
-    border:3px solid green;
+    border: 3px solid green;
 }
 
 .card h2 {
@@ -105,4 +106,32 @@
 .card:hover img {
     filter: brightness(0.9);
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 40px); 
+    }
+
+    .cardsection h1 {
+        font-size: 2rem; 
+    }
+
+    .cardsection h2 {
+        font-size: 1.25rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; 
+    }
+
+    .cardsection h1 {
+        font-size: 1.8rem; 
+    }
+
+    .cardsection h2 {
+        font-size: 1rem; 
+    }
 }
