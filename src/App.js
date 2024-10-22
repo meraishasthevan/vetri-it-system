@@ -9,6 +9,10 @@ import { Routes, Route } from 'react-router-dom';
 import Development from "./components/development/Development";
 import Serve from "./components/development/Serve";
 import Static from "./components/development/Static";
+import Dynamic from "./components/development/Dynamic";
+import Commerce from "./components/development/Commerce";
+import Design from "./components/development/Design";
+import Goal from "./components/development/Goal";
 
 function App() {
   return (
@@ -25,7 +29,7 @@ function App() {
                 <Footer/>
             </>
          }/>
-       <Route path="development" element={<> <Development /><Serve /><Static/> </>} />
+       <Route path="development" element={<> <Development /><Serve /><Static/> <Dynamic/> <Commerce/> <Design/> <Goal/> </>} />
 
        
 

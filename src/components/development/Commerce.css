@@ -1,0 +1,136 @@
+.commerce {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.commerce-title {
+    text-align: center;
+    color: #045e0d;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+}
+
+.com-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.com-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 65%;
+}
+
+.com-item {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    padding: 10px;
+    transition: box-shadow 0.3s ease; 
+}
+
+.com-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: aquamarine;
+}
+
+.com-item img {
+    width: 50%;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.com-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.com-item:hover p {
+    color: #056c0a; 
+}
+
+.com-image-container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.com-main-image {
+    width: 70%;
+    border-radius: 10px;
+    animation: floatingPulsing 4s ease-in-out infinite;
+}
+
+@keyframes floatingPulsing {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-10px) scale(1.1);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+.com-main-image:hover {
+    transform: scale(1.05); 
+}
+
+@media (max-width: 1024px) {
+    .com-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .com-main {
+        grid-template-columns: repeat(2, 1fr); 
+        width: 100%; 
+    }
+
+    .com-image-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .com-main-image {
+        width: 40%; 
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .com-main {
+        grid-template-columns: repeat(2, 1fr); 
+        width: 100%; 
+    }
+
+    .com-image-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .com-main-image {
+        width: 50%; 
+    }
+}
+
+
+@media (max-width: 576px) {
+    .com-main {
+        grid-template-columns: repeat(1, 1fr); 
+        width: 100%; 
+    }
+}
