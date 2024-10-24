@@ -28,7 +28,7 @@ function Serve(){
                   <img src={serve3} alt="wait"/>
                   <h1>E-Commerce Website</h1>
                   <button>Start from ₹ 15000</button>
-                  <p>A Perfect Package to Boost your Sales and Increase the Customers with an User Friendly Website with UPI Payment & Cards EMI Facilities to your customers..</p>
+                  <p className="serve-p">A Perfect Package to Boost your Sales and Increase the Customers with an User Friendly Website with UPI Payment & Cards EMI Facilities to your customers..</p>
                </div>
                <div className="serve-item">
                   <img src={serve4} alt="wait"/>

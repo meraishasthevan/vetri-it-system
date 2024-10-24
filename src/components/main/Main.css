@@ -1,6 +1,9 @@
 .main {
     padding: 40px 0;
 }
+body{
+    font-family: "Mrs Eaves XL Serif", serif;
+}
 
 .main-container {
     text-align: center;
@@ -9,10 +12,14 @@
     color:green;
     border-bottom: 15px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    
+  
 }
 .main-container h3{
     color:rgb(15, 15, 83);
+    font-weight: 700;
     margin-bottom: 15px;
+    font-family: "Mrs Eaves XL Serif", serif;
 }
 
 .carousel {

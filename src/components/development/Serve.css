@@ -22,15 +22,16 @@
 .serve-item {
     background-color: #fff;
     width: 100%;
-    max-width: 300px;
+    max-width: 320px; 
     padding: 20px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
     border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease; 
     position: relative;
     overflow: hidden;
     text-align: center;
     cursor: pointer;
+    margin: 10px; 
 }
 
 .serve-item p {
@@ -43,37 +44,54 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-weight:600;
+    font-weight: 600;
+    white-space: normal; 
+    width: 90%; 
+    margin: 0; 
 }
 
 .serve-item img,
-.serve-item h1,
 .serve-item button {
     transition: opacity 0.3s ease;
 }
 
+.serve-container .serve-item h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+    transition: all 0.3s ease;
+    width: 90%; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    /* padding-left:15px; */
+}
+
+.serve-item:hover h1 {
+    position: absolute;
+    top: 40px; 
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    z-index: 1;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
 .serve-item:hover img,
-.serve-item:hover h1,
 .serve-item:hover button {
-    opacity: 0;
+    opacity: 0; 
 }
 
 .serve-item:hover p {
-    opacity: 1;
+    opacity: 1; 
     transform: translate(-50%, -50%);
 }
 
 .serve-item img {
-    width: 50%;
+    width: 50%; 
     height: auto;
     object-fit: cover;
     margin-bottom: 20px;
-}
-
-.serve-item h1 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #333;
 }
 
 .serve-item button {
@@ -93,13 +111,36 @@
 }
 
 .serve-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6); 
+}
+@media(max-width:1440px){
+    .serve-item {
+        max-width:300px ;
+    }
+}
+@media(max-width:1024px){
+    .serve-item {
+        max-width:400px ;
+    }
 }
 
 @media (max-width: 768px) {
     .serve-main {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row; 
+        align-items: flex-start; 
+        justify-content: center;
+    }
+    .serve-item {
+        max-width:300px ;
+ 
+    }
+}
+
+@media(max-width:575px) {
+    .serve-item:hover h1 {
+        top: 10px; 
+    }
+    .serve-item {
+        width: calc(100% - 20px); 
     }
 }

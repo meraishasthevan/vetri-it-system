@@ -14,11 +14,11 @@
 
 .cardsection h1 {
     font-size: 2.5rem;
-    color: #333;
+    color: #111111;
     margin-bottom: 20px; 
     text-align: center;
     position: relative;
-}
+    font-family: "Mrs Eaves XL Serif", serif;}
 
 .cardsection h1::after {
     content: '';
@@ -41,9 +41,11 @@
 
 .cardsection h2 {
     font-size: 1.5rem;
-    color: #555;
+    color: #0b023d;
+    font-weight: 600;
     margin-bottom: 20px;
     text-align: center;
+    font-family: "Mrs Eaves XL Serif", serif;
 }
 
 .card {

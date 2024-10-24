@@ -11,7 +11,7 @@
 
 .static h1 {
     text-align: center;
-    color:green;
+    color: green;
     text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     margin-bottom: 20px;
@@ -22,7 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 20px; 
 }
 
 @keyframes pulse {
@@ -47,7 +47,6 @@
     animation: pulse 2s ease-in-out infinite; 
 }
 
-
 .static-main {
     flex: 2;
     display: grid;
@@ -71,21 +70,24 @@
     height: auto;
     border-radius: 10px;
     display: block;
-    margin:0 auto;
+    margin: 0 auto;
 }
-.static-main div .sec-img{
+
+.static-main div .sec-img {
     margin-top: 10px;
 }
+
 .static-main div:hover {
     background-color: #eceff1;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .static-main div p {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     color: #333;
     padding-top: 10px;
 }
+
 
 @media (max-width: 1024px) {
     .static-container {
@@ -98,29 +100,38 @@
     }
     
     .static-container > div:first-child img {
-        width: 250px;
-        height: 250px;
+        width: 250px; 
+        height: auto;
     }
 
     .static-main {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
 }
 
 @media (max-width: 768px) {
     .static-container > div:first-child img {
-        width: 200px;
-        height: 200px;
+        width: 200px; 
+        height: auto;
     }
+
+    .static-main {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
+    }
+    
 }
 
 @media (max-width: 480px) {
+    .static-container {
+        padding: 30px 10px; 
+    }
+
     .static-main {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
     }
 
     .static-container > div:first-child img {
         width: 150px;
-        height: 150px;
+        height: auto;
     }
 }

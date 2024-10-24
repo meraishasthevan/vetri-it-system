@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
     /* background-color: #f4f4f9; */
-    min-height: 85vh;
+    min-height: 80vh;
 }
 
 .process {
@@ -23,7 +23,7 @@
 }
 
 .process div {
-    background-color: #42e037;
+    background-color: #86efac;  
     border-radius: 100%;
     padding: 20px;
     text-align: center;
@@ -46,14 +46,14 @@
 
 .process div h1 {
     font-size: 1.5rem;
-    color:white;
+    color:rgb(15, 2, 92);
     margin: 10px 0;
     transition: color 0.3s ease;
     text-shadow: none;
 }
 
 .process div:hover {
-    background-color: #c2f7be;
+    background-color: #8eeaf8;
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     cursor: pointer;

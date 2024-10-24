@@ -11,11 +11,16 @@ import dynamic6 from '../Vetri It Systems Development_files/dynamic6.jpg';
 function Dynamic() {
     return (
         <div className="dynamic">
-            <h1 className="dynamic-title">Dynamic Website</h1>
+           
             <div className="dynamic-container">
-                <div className="dynamic-image-container">
+            <div className="dynamic-1">
+             <div className="dynamic-image-container">
                     <img className="dynamic-main-image" src={dynamic} alt="Main Dynamic" />
-                </div>
+             </div>
+             <h1 className="dynamic-title cssanimation sequence leMovingBackFromRight">
+    <span>Dynamic Website</span>
+</h1>
+             </div>
                 <div className="dynamic-main">
                     <div className="dynamic-item">
                         <img className="dynamic-item-image" src={dynamic1} alt="Dynamic Example 1" />

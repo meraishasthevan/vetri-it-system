@@ -13,6 +13,7 @@ import Dynamic from "./components/development/Dynamic";
 import Commerce from "./components/development/Commerce";
 import Design from "./components/development/Design";
 import Goal from "./components/development/Goal";
+import Expert from "./components/development/Expert";
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
                 <Footer/>
             </>
          }/>
-       <Route path="development" element={<> <Development /><Serve /><Static/> <Dynamic/> <Commerce/> <Design/> <Goal/> </>} />
+       <Route path="development" element={<> <Development /><Serve /><Static/> <Dynamic/> <Commerce/> <Design/> <Goal/> <Expert/> <Footer/></>} />
 
        
 
